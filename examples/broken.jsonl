@@ -1,0 +1,5 @@
+{"type":"RUN_STARTED","threadId":"thread-demo","runId":"run-broken","protocolVersion":"1.0"}
+{"type":"SUBAGENT_STARTED","subagentRunId":"worker-1","name":"source-checker"}
+{"type":"TOOL_CALL_START","toolCallId":"call-1","toolCallName":"read_source","subagentRunId":"worker-1"}
+{"type":"TOOL_CALL_END","toolCallId":"call-1"}
+{"type":"RUN_FINISHED","threadId":"thread-demo","runId":"different-run"}

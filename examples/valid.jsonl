@@ -1,0 +1,13 @@
+{"type":"RUN_STARTED","threadId":"thread-demo","runId":"run-001","protocolVersion":"1.0"}
+{"type":"STEP_STARTED","stepName":"answer"}
+{"type":"TEXT_MESSAGE_START","messageId":"message-1"}
+{"type":"TEXT_MESSAGE_CONTENT","messageId":"message-1","delta":"Checking the source."}
+{"type":"TEXT_MESSAGE_END","messageId":"message-1"}
+{"type":"SUBAGENT_STARTED","subagentRunId":"worker-1","name":"source-checker","description":"Checks one source"}
+{"type":"TOOL_CALL_START","toolCallId":"call-1","toolCallName":"read_source","subagentRunId":"worker-1"}
+{"type":"TOOL_CALL_ARGS","toolCallId":"call-1","delta":"{\"id\":42}","subagentRunId":"worker-1"}
+{"type":"TOOL_CALL_END","toolCallId":"call-1","subagentRunId":"worker-1"}
+{"type":"TOOL_CALL_RESULT","messageId":"tool-message-1","toolCallId":"call-1","content":"verified","subagentRunId":"worker-1"}
+{"type":"SUBAGENT_FINISHED","subagentRunId":"worker-1","result":{"verified":true}}
+{"type":"STEP_FINISHED","stepName":"answer"}
+{"type":"RUN_FINISHED","threadId":"thread-demo","runId":"run-001","result":{"status":"ok"}}
